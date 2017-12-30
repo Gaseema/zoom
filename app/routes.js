@@ -203,6 +203,15 @@ module.exports = function (app, passport) {
         });
     });
 
+    //Article Routes
+    app.post('/', function (req, res) {
+        var user_id = req.body.userId;
+        var title = req.body.title;
+        var text = req.body.text;
+
+        res.send(user_id + ' ' + title + ' ' + text);
+    });
+
 
 };
 

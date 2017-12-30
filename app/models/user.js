@@ -28,8 +28,10 @@ var userSchema = mongoose.Schema({
         name: String
     },
     articles: {
-        heading: String,
-        passage: String
+        id: String,
+        title: String,
+        text: String,
+        user: String,
     }
 
 });
